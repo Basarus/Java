@@ -25,6 +25,10 @@ public class HelloWorld {
         return result;
     }
 
+    public static int flipBit(int value, int bitIndex) {
+        return value ^ (1 << (bitIndex - 1));
+    }
+
 }
 
 // jar cfe.hw.jar HelloWorld HelloWorld.class для сборки класса
