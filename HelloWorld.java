@@ -1,6 +1,7 @@
 public class HelloWorld {
+
     public static void main(String[] args) {
-        System.out.println("Hello World");
+        System.out.println(isPalindrome("Madam, I'm Adam!"));
     }
 
     public static boolean booleanExpression(boolean a, boolean b, boolean c, boolean d) {
@@ -47,6 +48,13 @@ public class HelloWorld {
             return true;
         else
             return false;
+    }
+
+    public static boolean isPalindrome(String text) {
+        String newString = text.replaceAll("[^a-zA-Z0-9]", "");
+        StringBuilder sb_newString = new StringBuilder(newString);
+        boolean fin = newString.equalsIgnoreCase(sb_newString.reverse().toString());
+        return fin;
     }
 
 }
