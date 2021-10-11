@@ -57,6 +57,12 @@ public class HelloWorld {
         return fin;
     }
 
+    public static BigInteger factorial(int value) {
+        BigInteger result = BigInteger.ONE;
+        for (int i = 1; i <= value; i++)
+            result = result.multiply(BigInteger.valueOf(i));
+        return result;
+    }
 }
 
 // jar cfe.hw.jar HelloWorld HelloWorld.class для сборки класса
