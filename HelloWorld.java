@@ -29,6 +29,13 @@ public class HelloWorld {
         return value ^ (1 << (bitIndex - 1));
     }
 
+    public static char charExpression(int a) {
+        char value = '\\';
+        value += a;
+        value = (char) value;
+        return value;
+    }
+
 }
 
 // jar cfe.hw.jar HelloWorld HelloWorld.class для сборки класса
