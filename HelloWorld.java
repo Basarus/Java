@@ -114,6 +114,8 @@ public class HelloWorld {
         return sbuf.toString();
     }
 
+    
+
 }
 
 // jar cfe.hw.jar HelloWorld HelloWorld.class для сборки класса
